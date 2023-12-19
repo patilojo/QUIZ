@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Angel Ares, David Barreira, Luis Díaz, Naima El Gargari y Patricia Lojo"
+    />
+    <meta name="description" content="Web App Film Quiz" />
+    <meta name="keywords" content="film, quiz, answer, questions" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
+    <title>Film Quiz</title>
+  </head>
+  <body id="index0">
+    <header>
+      <h1>Film Quiz</h1>
+    </header>
+    <main id="index">
+      <!-- <section id="title"> -->
+        <h2 id="textStart">
+          ARE YOU READY TO TEST<br />
+          YOUR FILM KNOWLEDGE?
+        </h2>
+        <button id="btnGo">GO!</button>
+      <!-- </section> -->
+    </main>
+
+    <footer>
+      © Angel Ares, David Barreira, Luis Díaz, Naima El Gargari y Patricia Lojo
+    </footer>
+
+    <script>
+      const go = document.getElementById("btnGo");
+
+      // Boton go para acceder a la pagina de juego.
+
+      go.addEventListener("click", () => {
+        window.location.assign("./quiz.html");
+      });
+    </script>
+  </body>
+</html>

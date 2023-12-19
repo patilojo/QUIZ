@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Angel Ares, David Barreira, Luis Díaz, Naima El Gargari y Patricia Lojo"
+    />
+    <meta name="description" content="Web App Film Quiz" />
+    <meta name="keywords" content="film, quiz, answer, questions" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="icon" type="image/jpg" href="./img/favicon.png" />
+    <title>Film Quiz Game</title>
+  </head>
+  <body id="index1">
+    <header>
+      <h1>Film Quiz</h1>
+    </header>
+    <main>
+      <div id="buttons">
+        <button id="btnBack"><a href="./index.html">BACK</a></button>
+        <h4 id="counter"></h4>
+        <img id="mute" src="./img/mute.png" alt="" />
+      </div>
+      <div id="cont_50">
+        <p id="questionNumber"></p>
+        <button id="btn_50">50%</button>
+      </div>
+
+      <section id="question">
+        <h2 id="questionContent">
+          For the film "Raiders of The Lost Ark", what was Harrison Ford sick
+          with during the filming of the Cairo chase?
+        </h2>
+        <div id="contSolution">
+          <p id="scores" class="solutionScore"></p>
+          <p id="solution" class="solutionScore"></p>
+        </div>
+      </section>
+
+      <section id="card">
+        <ul>
+          <button id="ans1" class="btns">resp 1</button>
+          <button id="ans2" class="btns">resp 2</button>
+          <button id="ans3" class="btns">resp 3</button>
+          <button id="ans4" class="btns">resp 4</button>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      © Angel Ares, David Barreira, Luis Díaz, Naima El Gargari y Patricia Lojo
+    </footer>
+    <audio id="audioQuestIncorrect" src="./audio/incorrectQuestion.mp3"></audio>
+    <audio id="audioQuest" src="./audio/correctQuestion.mp3"></audio>
+    <audio id="audioCount" src="./audio/countDown.mp3"></audio>
+    <audio loop id="mainAudio" src="./audio/millionaireMusic.mp3"></audio>
+    <script src="./JS/script.js"></script>
+  </body>
+</html>
